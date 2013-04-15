@@ -2,7 +2,7 @@ var ifthen = require('./ifthen');
 
 var assert = require('assert');
 
-describe('async if_', function () {
+describe('ifthen', function () {
     it('then condition', function (done) {
         ifthen.if_(true).then_(
             function (callback) {

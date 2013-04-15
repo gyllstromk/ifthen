@@ -1,0 +1,20 @@
+{
+  "name": "ifthen",
+  "version": "0.0.1",
+  "description": "Facilitate if-then-else-finally structure in asynchronous callbacks",
+  "main": "ifthen.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec"
+  },
+  "repository": "",
+  "keywords": [
+    "javascript",
+    "asynchronous",
+    "branching"
+  ],
+  "author": "Karl Gyllstrom",
+  "license": "BSD",
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  }
+}

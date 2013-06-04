@@ -47,9 +47,18 @@
         }
     };
 
-    if (typeof module !== 'undefined' && module.exports) {
+    // AMD / RequireJS
+    if (typeof define !== 'undefined' && define.amd)     {
+        define([], function() {
+            return ifthen;
+        });
+    }
+    // Node.js
+    else if (typeof module !== 'undefined' && module.exports) {
         module.exports = ifthen;
-    } else {
+    } 
+	// Vanilla <Script> tag loading
+	else {
         window.ifthen = ifthen;
     }
 })();
